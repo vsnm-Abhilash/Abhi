@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.vsnmabhilash.tic_tac_toe.MainActivity">
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+    </GridLayout>
+
+    <ImageButton
+        android:text="Button"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:backgroundTint="#D7C428"
+        android:layout_alignBottom="@+id/b5"
+        android:layout_toStartOf="@+id/b5"
+        android:id="@+id/b4" />
+
+    <ImageButton
+        android:text="Button"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:backgroundTint="#D7C428"
+        android:layout_alignBottom="@+id/b5"
+        android:layout_toEndOf="@+id/b5"
+        android:id="@+id/b6" />
+
+    <ImageButton
+        android:text="Button"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:backgroundTint="#D7C428"
+        android:id="@+id/b8"
+        android:layout_alignBaseline="@+id/b7"
+        android:layout_alignBottom="@+id/b7"
+        android:layout_toEndOf="@+id/b7" />
+
+    <ImageButton
+        android:text="@string/button"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:backgroundTint="#D7C428"
+        android:id="@+id/b9"
+        android:layout_alignBaseline="@+id/b8"
+        android:layout_alignBottom="@+id/b8"
+        android:layout_toEndOf="@+id/b8" />
+
+    <ImageButton
+        android:text="Button"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:backgroundTint="#D7C428"
+        android:id="@+id/b2"
+        android:layout_alignTop="@+id/b1"
+        android:layout_toEndOf="@+id/b4"
+        android:elevation="0dp" />
+
+    <ImageButton
+        android:text="Button"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:backgroundTint="#D7C428"
+        android:id="@+id/b5"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:text="Button"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:backgroundTint="#D7C428"
+        android:id="@+id/b3"
+        android:layout_alignTop="@+id/b2"
+        android:layout_toEndOf="@+id/b2" />
+
+    <TextView
+        android:text="Welcome to Tic-Tac-Toe game"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="47dp"
+        android:id="@+id/textView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:layout_above="@+id/b1"
+        android:layout_alignStart="@+id/b1" />
+
+    <ImageButton
+        android:text="Button"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:backgroundTint="#D7C428"
+        android:id="@+id/b7"
+        android:layout_below="@+id/b4"
+        android:layout_alignStart="@+id/b4" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="56dp"
+        android:id="@+id/Abhitext"
+        android:textStyle="normal|bold|italic"
+        android:textAllCaps="true" />
+
+    <ImageButton
+        android:text="Button"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:backgroundTint="#D7C428"
+        android:id="@+id/b1"
+        android:soundEffectsEnabled="true"
+        android:layout_above="@+id/b4"
+        android:layout_alignStart="@+id/b4" />
+
+    <Button
+        android:id="@+id/new_game"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="32dp"
+        android:text="NEW GAME" />
+
+</RelativeLayout>
